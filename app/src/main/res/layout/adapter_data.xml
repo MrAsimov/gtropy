@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:id="@+id/container"
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="20dp"
+    app:cardElevation="15dp">
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="400dp">
+        android:layout_height="100dp">
         <TextView
+            android:textColor="#fff"
             android:id="@+id/vehicleid"
             android:layout_alignParentLeft="true"
             android:layout_width="wrap_content"
@@ -17,23 +25,45 @@
             android:layout_below="@+id/vehicleid"
             android:id="@+id/location"
             android:visibility="visible"
+            android:textColor="#fff"
+            android:textSize="16sp"
             android:layout_alignParentLeft="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Location"/>
 
         <TextView
+            android:layout_below="@+id/location"
+            android:id="@+id/drivername"
+            android:visibility="visible"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XYZ"/>
+
+        <TextView
+            android:layout_below="@+id/drivername"
+            android:id="@+id/drivernumber"
+            android:textColor="#fff"
+            android:visibility="visible"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="drivernumber"/>
+
+        <TextView
             android:id="@+id/date"
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#fff"
             android:text="date"/>
 
     </RelativeLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Pappu"/>
-
 </LinearLayout>
+</androidx.cardview.widget.CardView>
