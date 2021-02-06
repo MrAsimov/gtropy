@@ -21,7 +21,6 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
     private List<DataModel> dataModelList;
     private OnItemClickListener listener;
     private String[] colors;
-    //private List<String> colors=
 
     public DataAdapter(Context context, List<DataModel> dataModelList, OnItemClickListener listener){
         this.mcontext=context;
